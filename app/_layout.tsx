@@ -9,6 +9,7 @@ import { StatusBar } from 'expo-status-bar';
 import 'react-native-reanimated';
 import { Suspense } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
+import Toast from 'react-native-toast-message';
 
 import { useColorScheme } from '@/hooks/use-color-scheme';
 import { AppQueryProvider } from '@/providers/query-client';
@@ -31,6 +32,7 @@ export default function RootLayout() {
             </Stack>
             <PortalHost />
             <StatusBar style="auto" />
+            <Toast />
           </ThemeProvider>
         </AppQueryProvider>
       </Suspense>

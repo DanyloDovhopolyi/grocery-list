@@ -6,6 +6,7 @@ import {
   useQueryClient,
   useSuspenseQuery,
 } from "@tanstack/react-query";
+import Toast from "react-native-toast-message";
 
 export const useGroceryList = () => {
   const queryClient = useQueryClient();
@@ -41,8 +42,14 @@ export const useGroceryList = () => {
       if (context?.previousItems) {
         queryClient.setQueryData(queryKeys.groceryItems, context.previousItems);
       }
+      Toast.show({
+        type: "error",
+        text1: "Could not update item",
+        text2: "Connection issue. Checkbox state was rolled back.",
+        visibilityTime: 1800,
+      });
     },
-    onSuccess: ({ data: updatedItem }) => {
+    onSuccess: ({ data: updatedItem }, variables) => {
       queryClient.setQueryData<GroceryItem[]>(
         queryKeys.groceryItems,
         (currentItems) =>
@@ -50,6 +57,12 @@ export const useGroceryList = () => {
             item.id === updatedItem.id ? updatedItem : item,
           ) ?? [],
       );
+      Toast.show({
+        type: "success",
+        text1: variables.bought ? "Marked as bought" : "Moved back to list",
+        text2: variables.bought ? "Item checked off" : "Item is active again",
+        visibilityTime: 1200,
+      });
     },
   });
 
