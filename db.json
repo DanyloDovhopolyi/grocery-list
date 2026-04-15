@@ -1,0 +1,293 @@
+{
+  "groceryItems": [
+    {
+      "id": "1",
+      "title": "Milk",
+      "amount": "1 L",
+      "bought": false
+    },
+    {
+      "id": "2",
+      "title": "Bread",
+      "amount": "2",
+      "bought": false
+    },
+    {
+      "id": "5",
+      "title": "Chicken breast",
+      "amount": "800 g",
+      "bought": false
+    },
+    {
+      "id": "6",
+      "title": "Grocery item 006",
+      "amount": "2",
+      "bought": true
+    },
+    {
+      "id": "7",
+      "title": "Grocery item 007",
+      "amount": "3",
+      "bought": true
+    },
+    {
+      "id": "8",
+      "title": "Grocery item 008",
+      "amount": "4",
+      "bought": false
+    },
+    {
+      "id": "9",
+      "title": "Grocery item 009",
+      "amount": "5",
+      "bought": true
+    },
+    {
+      "id": "10",
+      "title": "Grocery item 010",
+      "amount": "1",
+      "bought": false
+    },
+    {
+      "id": "11",
+      "title": "Grocery item 011",
+      "amount": "2",
+      "bought": false
+    },
+    {
+      "id": "12",
+      "title": "Grocery item 012",
+      "amount": "3",
+      "bought": true
+    },
+    {
+      "id": "13",
+      "title": "Grocery item 013",
+      "amount": "4",
+      "bought": false
+    },
+    {
+      "id": "14",
+      "title": "Grocery item 014",
+      "amount": "5",
+      "bought": false
+    },
+    {
+      "id": "15",
+      "title": "Grocery item 015",
+      "amount": "1",
+      "bought": true
+    },
+    {
+      "id": "16",
+      "title": "Grocery item 016",
+      "amount": "2",
+      "bought": false
+    },
+    {
+      "id": "17",
+      "title": "Grocery item 017",
+      "amount": "3",
+      "bought": false
+    },
+    {
+      "id": "18",
+      "title": "Grocery item 018",
+      "amount": "4",
+      "bought": true
+    },
+    {
+      "id": "19",
+      "title": "Grocery item 019",
+      "amount": "5",
+      "bought": false
+    },
+    {
+      "id": "20",
+      "title": "Grocery item 020",
+      "amount": "1",
+      "bought": false
+    },
+    {
+      "id": "21",
+      "title": "Grocery item 021",
+      "amount": "2",
+      "bought": true
+    },
+    {
+      "id": "22",
+      "title": "Grocery item 022",
+      "amount": "3",
+      "bought": false
+    },
+    {
+      "id": "23",
+      "title": "Grocery item 023",
+      "amount": "4",
+      "bought": false
+    },
+    {
+      "id": "24",
+      "title": "Grocery item 024",
+      "amount": "5",
+      "bought": true
+    },
+    {
+      "id": "25",
+      "title": "Grocery item 025",
+      "amount": "1",
+      "bought": false
+    },
+    {
+      "id": "26",
+      "title": "Grocery item 026",
+      "amount": "2",
+      "bought": false
+    },
+    {
+      "id": "27",
+      "title": "Grocery item 027",
+      "amount": "3",
+      "bought": true
+    },
+    {
+      "id": "28",
+      "title": "Grocery item 028",
+      "amount": "4",
+      "bought": false
+    },
+    {
+      "id": "29",
+      "title": "Grocery item 029",
+      "amount": "5",
+      "bought": false
+    },
+    {
+      "id": "30",
+      "title": "Grocery item 030",
+      "amount": "1",
+      "bought": true
+    },
+    {
+      "id": "31",
+      "title": "Grocery item 031",
+      "amount": "2",
+      "bought": false
+    },
+    {
+      "id": "32",
+      "title": "Grocery item 032",
+      "amount": "3",
+      "bought": false
+    },
+    {
+      "id": "33",
+      "title": "Grocery item 033",
+      "amount": "4",
+      "bought": true
+    },
+    {
+      "id": "34",
+      "title": "Grocery item 034",
+      "amount": "5",
+      "bought": false
+    },
+    {
+      "id": "35",
+      "title": "Grocery item 035",
+      "amount": "1",
+      "bought": false
+    },
+    {
+      "id": "36",
+      "title": "Grocery item 036",
+      "amount": "2",
+      "bought": true
+    },
+    {
+      "id": "37",
+      "title": "Grocery item 037",
+      "amount": "3",
+      "bought": false
+    },
+    {
+      "id": "38",
+      "title": "Grocery item 038",
+      "amount": "4",
+      "bought": false
+    },
+    {
+      "id": "39",
+      "title": "Grocery item 039",
+      "amount": "5",
+      "bought": true
+    },
+    {
+      "id": "40",
+      "title": "Grocery item 040",
+      "amount": "1",
+      "bought": false
+    },
+    {
+      "id": "41",
+      "title": "Grocery item 041",
+      "amount": "2",
+      "bought": false
+    },
+    {
+      "id": "42",
+      "title": "Grocery item 042",
+      "amount": "3",
+      "bought": true
+    },
+    {
+      "id": "43",
+      "title": "Grocery item 043",
+      "amount": "4",
+      "bought": false
+    },
+    {
+      "id": "44",
+      "title": "Grocery item 044",
+      "amount": "5",
+      "bought": false
+    },
+    {
+      "id": "45",
+      "title": "Grocery item 045",
+      "amount": "1",
+      "bought": true
+    },
+    {
+      "id": "46",
+      "title": "Grocery item 046",
+      "amount": "2",
+      "bought": false
+    },
+    {
+      "id": "47",
+      "title": "Grocery item 047",
+      "amount": "3",
+      "bought": false
+    },
+    {
+      "id": "48",
+      "title": "Grocery item 048",
+      "amount": "4",
+      "bought": true
+    },
+    {
+      "id": "49",
+      "title": "Grocery item 049",
+      "amount": "5",
+      "bought": false
+    },
+    {
+      "id": "50",
+      "title": "Grocery item 050",
+      "amount": "1",
+      "bought": false
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

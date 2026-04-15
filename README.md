@@ -1,50 +1,70 @@
-# Welcome to your Expo app 👋
+# Grocery List PoC
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+React Native + Expo proof of concept for grocery management.
 
-## Get started
+## What is implemented
 
-1. Install dependencies
+- View grocery list
+- Add new grocery item
+- Edit existing item
+- Delete item with confirmation
+- Add amount for each item
+- Mark item as bought (checkbox + crossed out title)
+- Optimistic update for bought toggle (with rollback on error)
+- Pull-to-refresh on the list
+- Loading, error, and suspense states
+- JSON-server API mock + TanStack React Query integration
 
-   ```bash
-   npm install
-   ```
+## Tech stack
 
-2. Start the app
+- Expo Router
+- TypeScript
+- TanStack React Query
+- Axios
+- JSON Server
+- Formik + Yup
+- React Native Reusables (NativeWind UI components)
 
-   ```bash
-   npx expo start
-   ```
+## How to run
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+### 1) Install dependencies
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2) Start mock API (Terminal 1)
 
-## Learn more
+```bash
+npm run api
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Runs JSON Server on `http://localhost:3001` with data from [`db.json`](./db.json).
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### 3) Start app (Terminal 2)
 
-## Join the community
+```bash
+npx expo start
+```
 
-Join our community of developers creating universal apps.
+Then open app in Expo Go / simulator / web.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+For web only:
+
+```bash
+npm run web
+```
+
+## API URL notes
+
+By default:
+
+- Web: `http://localhost:3001`
+- Android emulator: `http://10.0.2.2:3001`
+- iOS simulator: `http://127.0.0.1:3001`
+
+You can override with `EXPO_PUBLIC_API_URL` (see [`.env.example`](./.env.example)).
+
+## Seed data
+
+- `db.json` currently contains **50 grocery items** for list/performance testing.
